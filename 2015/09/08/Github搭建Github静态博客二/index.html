@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Markdown | 学无止境</title>
+  <title>Github搭建Github静态博客二 | 学无止境</title>
   <meta name="author" content="熊星">
   
   <meta name="description" content="Stay Hungry. Stay Foolish.">
@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="Github搭建Github静态博客二"/>
   <meta property="og:site_name" content="学无止境"/>
 
   
@@ -208,25 +208,142 @@
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-<h2 class="archive-title tag">Markdown</h2>
-
-
-  <div class="archive">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
     
-      <article class="post">
-        <div class="post-content">
-          <header>
-            <div class="icon"></div>
-            <time datetime="2015-09-07T08:41:41.000Z"><a href="/2015/09/07/Markdown简明语法/">2015-09-07</a></time>
-            
-              <h1 class="title"><a href="/2015/09/07/Markdown简明语法/">Markdown简明语法</a></h1>
-            
-          </header>
-        </div>
-      </article>
+      <img src="">
     
   </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-09-07T17:21:26.000Z"><a href="/2015/09/08/Github搭建Github静态博客二/">2015-09-08</a></time>
+      
+      
+  
+    <h1 class="title">Github搭建Github静态博客二</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h5 id="注册Github账号">注册Github账号</h5><p>已有账号的直接登录即可，没有账号的请<a href="https://github.com/" target="_blank" rel="external">在此</a>注册。</p>
+<h5 id="创建repository">创建repository</h5><a id="more"></a>
+<p>在自己的GitHub主页的右下角，点击New repository 按钮创建一个新的repository，项目名为<code>username.github.io</code>。</p>
+<h5 id="设置SSH_keys">设置SSH keys</h5><ol>
+<li><p>在（Git Bash）下键入如下命令（邮箱是你注册Github时候的邮箱），</p>
+<pre><code><span class="title">ssh</span> -keygen -t rsa -C “username<span class="variable">@example</span>.com”
+</code></pre></li>
+<li><p>然后键入以下命令</p>
+<pre><code>ssh-agent <span class="operator">-s</span>
+</code></pre></li>
+<li><p>继续输入命令</p>
+<pre><code><span class="label">ssh</span>-<span class="keyword">add </span>~/.ssh/id_rsa
+</code></pre></li>
+<li><p>之后，添加SSH key到Github里面。</p>
+</li>
+<li><p>最后在（Git Bash）下执行如下命令，验证和github是否联通：</p>
+<pre><code>ssh -<span class="constant">T </span>git<span class="variable">@github</span>.com
+
+弹出如下提示，则说明已经和github建立了连接
+
+<span class="variable">$ </span>ssh -<span class="constant">T </span>git<span class="variable">@github</span>.com
+<span class="constant">Hi </span>patton199! <span class="constant">You'</span>ve successfully authenticated, but <span class="constant">GitHub </span>does <span class="keyword">not</span> provide she
+ll access.    
+</code></pre></li>
+</ol>
+<h5 id="部署">部署</h5><p>编辑<code>_config.yml</code>(C:\hexo下)。配置deploy选项</p>
+<pre><code><span class="attribute">deploy</span>:
+  <span class="attribute">type</span>: git
+  <span class="attribute">repository</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:xx1206917580/xx1206917580.github.io.git
+  <span class="attribute">branch</span>: master
+</code></pre><p>然后，执行下列命令完成github部署</p>
+<pre><code>\<span class="preprocessor"># 生成html静态页面</span>
+hexo generate
+\<span class="preprocessor"># 将静态页面发不到github上去</span>
+hexo deploy
+</code></pre><p>现在在浏览器中输入<code>username.github.io</code>就能访问我们的博客了。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/Hexo/">Hexo</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/Github/">Github</a>, <a href="/tags/Hexo/">Hexo</a>
+  </div>
+
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+ <nav id="pagination" >
+    
+    
+    <a href="/2015/09/08/Github搭建Github静态博客一/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+
+
+<section id="comment">
+
+<!-- 多说评论框 start -->
+	<div class="ds-thread"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"xx1206917580"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+
+  
+</section>
+
 </div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
