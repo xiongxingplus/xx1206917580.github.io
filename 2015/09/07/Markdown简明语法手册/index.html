@@ -240,44 +240,57 @@ var _hmt = _hmt || [];
     </header>
     <div class="entry">
       
-        <h3 id="1-_斜体和粗体">1. 斜体和粗体</h3><p>使用 <em> 和 *</em> 表示斜体和粗体。</p>
-<p>示例 ：</p>
-<p>这是 <em>斜体</em> ，这是 <strong>粗体</strong>。</p>
-<a id="more"></a>
-<h3 id="2-_分级标题">2. 分级标题</h3><p>使用 === 表示一级标题 ， 使用 — 表示二级标题。</p>
-<p>示例：</p>
-<p>使用 行首加井号表示不同级别的标题 (H1-H6)，例如：# H1, ## H2, ### H3，#### H4。</p>
-<h3 id="3-_外链接">3. 外链接</h3><p>使用  [描述](链接地址) 为文字增加外连接</p>
-<p>示例 ：</p>
-<p>这是去往 <a href="http://xx1206917580.github.io/" target="_blank" rel="external">本人博客</a> 的链接。</p>
-<h3 id="4-_无序列表。">4. 无序列表。</h3><p>示例 ：</p>
-<ul>
-<li>无序列表</li>
-<li>无序列表</li>
-<li>无序列表</li>
-</ul>
-<h3 id="5-_有序列表">5. 有序列表</h3><p>使用数字和点表示有序列表。</p>
-<p>示例 ：</p>
-<ol>
-<li>有序列表项</li>
-<li>有序列表项</li>
-<li>有序列表项</li>
-</ol>
-<h3 id="6-_文字引用">6. 文字引用</h3><p>使用 &gt; 表示文字引用。</p>
-<p>示例 ：</p>
-<blockquote>
-<p>野火烧不尽，春风吹又生。</p>
-</blockquote>
-<h3 id="7-_行内代码块">7. 行内代码块</h3><p>使用 `代码` 表示行内代码块。</p>
-<p>示例 ：</p>
-<p>让我们聊聊 <code>html</code>。</p>
-<h3 id="8-_代码块">8. 代码块</h3><p>使用 四个缩进空格 表示代码块。</p>
-<p>示例 ：</p>
-<pre><code>这是一个代码块，此处左侧有四个不可见的空格。
-</code></pre><h3 id="9-_插入图像">9. 插入图像</h3><p>使用 \！[描述](图标链接地址)插入图像。</p>
-<p>示例 :</p>
-<p><img src="https://www.zybuluo.com/static/img/my_head.jpg" alt="我的图像"></p>
+        <h3 id="1-_斜体和粗体">1. 斜体和粗体</h3><pre><code>使用 <span class="keyword">*</span> 和 <span class="keyword">*</span><span class="keyword">*</span> 表示斜体和粗体。
 
+示例 ：
+
+这是 <span class="keyword">*</span>斜体<span class="keyword">*</span> ，这是 <span class="keyword">*</span><span class="keyword">*</span>粗体<span class="keyword">*</span><span class="keyword">*</span>。
+</code></pre><a id="more"></a>
+<h3 id="2-_分级标题">2. 分级标题</h3><pre><code>使用 === 表示一级标题 ， 使用 --- 表示二级标题。
+
+示例：
+
+使用 行首加井号表示不同级别的标题 <span class="comment">(H1-H6)</span>，例如：<span class="title"># H1</span>, <span class="title">## H2</span>, <span class="title">### H3</span>，<span class="title">#### H4</span>。
+</code></pre><h3 id="3-_外链接">3. 外链接</h3><pre><code>使用  \[<span class="link_label">描述</span>](<span class="link_url">链接地址</span>) 为文字增加外连接
+
+示例 ：
+
+这是去往 [<span class="link_label">本人博客</span>](<span class="link_url">http://xx1206917580.github.io/</span>) 的链接。
+</code></pre><h3 id="4-_无序列表。">4. 无序列表。</h3><pre><code>使用 *，+，- 表示无序列表。
+
+示例 ：
+
+-<span class="ruby"> 无序列表
+</span>-<span class="ruby"> 无序列表
+</span>-<span class="ruby"> 无序列表</span>
+</code></pre><h3 id="5-_有序列表">5. 有序列表</h3><pre><code>使用数字和点表示有序列表。
+
+示例 ：
+
+<span class="number">1.</span> 有序列表项
+<span class="number">2.</span> 有序列表项
+<span class="number">3.</span> 有序列表项
+</code></pre><h3 id="6-_文字引用">6. 文字引用</h3><pre><code>使用 &gt; 表示文字引用。
+
+示例 ：
+
+<span class="blockquote">&gt; 野火烧不尽，春风吹又生。</span>
+</code></pre><h3 id="7-_行内代码块">7. 行内代码块</h3><pre><code>使用 \<span class="escape">`代</span>码<span class="escape">` </span>表示行内代码块。
+
+示例 ：
+
+让我们聊聊 <span class="escape">`h</span>tml<span class="escape">`。</span>
+</code></pre><h3 id="8-_代码块">8. 代码块</h3><pre><code>使用 四个缩进空格 表示代码块。
+
+示例 ：
+
+    这是一个代码块，此处左侧有四个不可见的空格。
+</code></pre><h3 id="9-_插入图像">9. 插入图像</h3><pre><code>使用 \！\[<span class="link_label">描述</span>](<span class="link_url">图标链接地址</span>)插入图像。
+
+示例 :
+
+![<span class="link_label">我的图像</span>](<span class="link_url">https://www.zybuluo.com/static/img/my_head.jpg</span>)
+</code></pre>
       
     </div>
     <footer>
